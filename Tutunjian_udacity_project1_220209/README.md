@@ -23,6 +23,7 @@ The Scikit Learn LinearRegression model had an accuracy result 0.9170, whereas t
 **Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**
 The Scikit-Learn approach uses the LogisticRegression algorithm to train and build a model which predicts the descision for marketing.
 although it is called  "regression", however the algorithm serves as a binary classification. the hyper parameters chosen for the optimization were C and maximum iterations. the choices of values for the paramter tuning were selected randomly. The RandomParameterSampling was choosen here. The model was prepared in a python script and saved in the Notebook, the hyperdrive then used the script, the sampler and the dataset (which was converted through the python script into input x and label y) and choose randomly 20 combination of C and maximum iterations to find the best accuracy score of the mode. the best model was choosen and saved in the model directory as "sklearn-best-model.joblib".
+![alt text](https://github.com/shahan00t/udacity_project1_resubmission/blob/main/project1_sklearn_architecture.jpg?raw=true)
 
 **What are the benefits of the parameter sampler you chose?**
 RandomParameterSampling in contrast to Grid sampling is a faster and efficient way to optimize the hyperparameters. Unlike the grid approach it doesent choose all the combinations, but rather randomly a set of arguments.
@@ -45,4 +46,5 @@ for future improvements, if more time and resources are available a grid sampler
 ## Proof of cluster clean up
 **If you did not delete your compute cluster in the code, please complete this section. Otherwise, delete this section.**
 **Image of cluster marked for deletion**
-cluster is running on 
+cluster is running on company resources deletion is not reuired. Nevertheless, to complete the requirements of the udacity project, the screenshot confirming the deletion is added!
+![alt text](https://github.com/shahan00t/udacity_project1_resubmission/blob/main/Udacity_computercluster_delete.jpg?raw=true)
